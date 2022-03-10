@@ -1,0 +1,17 @@
+{
+  "name": "@aaronguo/eslint-config-wx",
+  "version": "0.1.0",
+  "description": "eslint-config 微信小程序",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint-config-wx"
+  ],
+  "author": "AaronGuo <1359774872@qq.com> (https://github.com/HongxuanG)",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^8.10.0"
+  }
+}
