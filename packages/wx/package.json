@@ -4,14 +4,24 @@
   "description": "eslint-config 微信小程序",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --config=index.js"
   },
+  "files": [  
+    "index.js"
+  ],
   "keywords": [
     "eslint-config-wx"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
+  },
   "author": "AaronGuo <1359774872@qq.com> (https://github.com/HongxuanG)",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "eslint": "^8.10.0"
   }
 }
