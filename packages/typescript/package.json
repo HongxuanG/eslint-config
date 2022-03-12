@@ -1,0 +1,30 @@
+{
+  "name": "@aaronguo/eslint-config-ts",
+  "version": "0.1.0",
+  "description": "eslint-config ts模块",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {},
+  "keywords": [
+    "eslint-config-ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
+  },
+  "author": "AaronGuo <1359774872@qq.com> (https://github.com/HongxuanG)",
+  "license": "MIT",
+  "dependencies": {
+    "@aaronguo/eslint-config-basic": "0.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@aaronguo/eslint-config",
+  "version": "1.0.0",
+  "description": "AaronGuo的eslint-config",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/HongxuanG/eslint-config.git"
+  },
+  "keywords": [
+    "AaronGuo 's eslint-config"
+  ],
+  "author": "AaronGuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HongxuanG/eslint-config/issues"
+  },
+  "homepage": "https://github.com/HongxuanG/eslint-config#readme",
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "lerna": "^4.0.0",
+    "typescript": "^4.6.2"
+  }
+}
