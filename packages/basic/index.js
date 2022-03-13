@@ -1,51 +1,39 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
   },
-  "extends": [
-    "standard",
-    "plugin:import/recommended",
-    "plugin:eslint-comments/recommended",
-    "plugin:jsonc/recommended-with-jsonc",
-    "plugin:yml/standard",
-    "plugin:markdown/recommended",
-    "plugin:@typescript-eslint/recommended"
+  extends: [
+    'standard',
+    'plugin:import/recommended',
+    'plugin:eslint-comments/recommended',
+    'plugin:jsonc/recommended-with-jsonc',
+    'plugin:yml/standard',
+    'plugin:markdown/recommended',
+    'plugin:@typescript-eslint/recommended',
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  "ignorePatterns": [
-    ".cache",
-    "*.min.*",
-    'CHANGELOG.md',
-    'dist',
-    'LICENSE.*',
-    'public',
-    'temp',
-  ],
-  "plugins": [
-    "html",
-    "unicore",
-    "@typescript-eslint"
-  ],
-  "settings": {
-    "import/resolver": {
+  ignorePatterns: ['.cache', '*.min.*', 'CHANGELOG.md', 'dist', 'LICENSE.*', 'public', 'temp', 'package-lock.json', 'pnpm-lock.yaml'],
+  plugins: ['html', 'unicorn', '@typescript-eslint'],
+  settings: {
+    'import/resolver': {
       node: { extensions: ['.js', '.mjs', '.ts', '.d.ts'] },
-    }
+    },
   },
-  "overrides": [
+  overrides: [
     {
-      files: ["*.json", "*.json5"],
-      parser: "jsonc-eslint-parser",
+      files: ['*.json', '*.json5'],
+      parser: 'jsonc-eslint-parser',
       rules: {
         'quotes': ['error', 'double'],
         'quote-props': ['error', 'always'],
         'comma-dangle': ['error', 'never'],
-      }
+      },
     },
     {
       files: ['*.yaml', '*.yml'],
@@ -124,7 +112,7 @@ module.exports = {
       },
     },
   ],
-  "rules": {
+  rules: {
     // import
     'import/order': 'error',
     'import/first': 'error',
@@ -152,19 +140,10 @@ module.exports = {
     'func-call-spacing': ['off', 'never'],
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'indent': ['error', 2, { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 }],
-    'no-restricted-syntax': [
-      'error',
-      'DebuggerStatement',
-      'LabeledStatement',
-      'WithStatement',
-    ],
+    'no-restricted-syntax': ['error', 'DebuggerStatement', 'LabeledStatement', 'WithStatement'],
     'object-curly-spacing': ['error', 'always'],
     'no-return-await': 'off',
     'space-before-function-paren': ['error', 'never'],
-    "linebreak-style": [
-      "error",
-      "windows"
-    ],
     // es6
     'no-var': 'error',
     'prefer-const': [
@@ -195,17 +174,21 @@ module.exports = {
     'template-curly-spacing': 'error',
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
     'generator-star-spacing': 'off',
-    'spaced-comment': ['error', 'always', {
-      line: {
-        markers: ['/'],
-        exceptions: ['/', '#'],
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        line: {
+          markers: ['/'],
+          exceptions: ['/', '#'],
+        },
+        block: {
+          markers: ['!'],
+          exceptions: ['*'],
+          balanced: true,
+        },
       },
-      block: {
-        markers: ['!'],
-        exceptions: ['*'],
-        balanced: true,
-      },
-    }],
+    ],
 
     // best-practice
     'array-callback-return': 'error',
@@ -266,5 +249,7 @@ module.exports = {
         allowSeparatedGroups: false,
       },
     ],
-  }
+    'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
+    'yml/no-empty-document': 'off',
+  },
 }
