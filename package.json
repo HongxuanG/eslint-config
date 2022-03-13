@@ -6,6 +6,9 @@
   "scripts": {
     
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/HongxuanG/eslint-config.git"

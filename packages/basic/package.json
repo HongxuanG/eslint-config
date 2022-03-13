@@ -1,6 +1,6 @@
 {
   "name": "@aaronguo/eslint-config-basic",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "eslint-config basic模块",
   "keywords": [
     "eslint-config-basic"
