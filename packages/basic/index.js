@@ -18,7 +18,17 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  ignorePatterns: ['.cache', '*.min.*', 'CHANGELOG.md', 'dist', 'LICENSE.*', 'public', 'temp', 'package-lock.json', 'pnpm-lock.yaml'],
+  ignorePatterns: [
+    '.cache',
+    '*.min.*',
+    'CHANGELOG.md',
+    'dist',
+    'LICENSE.*',
+    'public',
+    'temp',
+    'package-lock.json',
+    'pnpm-lock.yaml',
+  ],
   plugins: ['html', 'unicorn', '@typescript-eslint'],
   settings: {
     'import/resolver': {
