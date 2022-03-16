@@ -2,14 +2,22 @@
   "name": "@aaronguo/eslint-config-ts",
   "version": "0.1.0",
   "description": "eslint-config ts模块",
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
-  "scripts": {},
   "keywords": [
     "eslint-config-ts"
   ],
+  "license": "MIT",
+  "author": "AaronGuo <1359774872@qq.com> (https://github.com/HongxuanG)",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --config=index.js",
+    "lint:fix": "eslint . --fix --config=index.js",
+    "publish:major": "npm version major && pnpm publish --no-git-checks",
+    "publish:minor": "npm version minor && pnpm publish --no-git-checks",
+    "publish:patch": "npm version patch && pnpm publish --no-git-checks"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -17,9 +25,8 @@
     "eslint": ">=7.4.0",
     "typescript": ">=3.9"
   },
-  "author": "AaronGuo <1359774872@qq.com> (https://github.com/HongxuanG)",
-  "license": "MIT",
   "dependencies": {
+    "@aaronghx/eslint-config-basic": "workspace:^0.1.4",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0"
   },
