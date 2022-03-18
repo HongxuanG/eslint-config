@@ -11,13 +11,7 @@ module.exports = {
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
     'plugin:markdown/recommended',
-    'plugin:@typescript-eslint/recommended',
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-  },
   ignorePatterns: [
     '.cache',
     '*.min.*',
@@ -29,7 +23,7 @@ module.exports = {
     'package-lock.json',
     'pnpm-lock.yaml',
   ],
-  plugins: ['html', 'unicorn', '@typescript-eslint'],
+  plugins: ['html', 'unicorn'],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs', '.ts', '.d.ts'] },
