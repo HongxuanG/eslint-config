@@ -1,11 +1,9 @@
 {
-  "name": "@aaronguo/eslint-config",
+  "name": "@aaronghx/eslint-config-allrepo",
   "version": "1.0.0",
   "description": "AaronGuo的eslint-config",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "publishConfig": {
     "access": "public"
   },
@@ -22,7 +20,13 @@
     "url": "https://github.com/HongxuanG/eslint-config/issues"
   },
   "homepage": "https://github.com/HongxuanG/eslint-config#readme",
+  "script": {
+    "preinstall": "npx only-allow pnpm",
+    "lint": "eslint .",
+    "release": "lerna publish --conventional-commits"
+  },
   "devDependencies": {
+    "@aaronghx/eslint-config": "workspace:^0.1.1",
     "eslint": "^8.10.0",
     "lerna": "^4.0.0",
     "typescript": "^4.6.2"
