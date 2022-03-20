@@ -1,21 +1,26 @@
 {
-  "name": "@aaronghx/eslint-config-allrepo",
-  "version": "1.0.0",
+  "name": "@aaronghx/eslint-config-monorepo",
+  "version": "0.1.0",
   "description": "AaronGuo的eslint-config",
-  "main": "index.js",
-  "scripts": {},
-  "publishConfig": {
-    "access": "public"
-  },
+  "keywords": [
+    "AaronGuo 's eslint-config"
+  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/HongxuanG/eslint-config.git"
   },
-  "keywords": [
-    "AaronGuo 's eslint-config"
-  ],
   "author": "AaronGuo",
-  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "release": "pnpm run publish:patch -r"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/HongxuanG/eslint-config/issues"
   },
@@ -28,7 +33,6 @@
   "devDependencies": {
     "@aaronghx/eslint-config": "workspace:^0.1.1",
     "eslint": "^8.10.0",
-    "lerna": "^4.0.0",
     "typescript": "^4.6.2"
   }
 }
