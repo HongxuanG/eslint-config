@@ -25,11 +25,6 @@
     "url": "https://github.com/HongxuanG/eslint-config/issues"
   },
   "homepage": "https://github.com/HongxuanG/eslint-config#readme",
-  "script": {
-    "preinstall": "npx only-allow pnpm",
-    "lint": "eslint .",
-    "release": "lerna publish --conventional-commits"
-  },
   "devDependencies": {
     "@aaronghx/eslint-config": "workspace:^0.1.1",
     "eslint": "^8.10.0",
