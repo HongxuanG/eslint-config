@@ -1,6 +1,6 @@
 {
   "name": "@aaronghx/eslint-config",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "eslint-config",
   "keywords": [
     "eslint-config"
@@ -25,13 +25,13 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@aaronghx/eslint-config-basic": "workspace:^0.1.5",
-    "@aaronghx/eslint-config-react": "workspace:^0.1.1",
-    "@aaronghx/eslint-config-ts": "workspace:^0.1.3",
-    "@aaronghx/eslint-config-vue": "workspace:^0.1.1",
-    "@aaronghx/eslint-config-wx": "workspace:^0.1.2"
+    "@aaronghx/eslint-config-basic": "workspace:^",
+    "@aaronghx/eslint-config-react": "workspace:^",
+    "@aaronghx/eslint-config-ts": "workspace:^",
+    "@aaronghx/eslint-config-vue": "workspace:^",
+    "@aaronghx/eslint-config-wx": "workspace:^"
   },
   "devDependencies": {
-    "eslint": "^8.10.0"
+    "eslint": "^8.13.0"
   }
 }

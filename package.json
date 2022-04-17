@@ -1,6 +1,6 @@
 {
   "name": "@aaronghx/eslint-config-monorepo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AaronGuo的eslint-config",
   "keywords": [
     "AaronGuo 's eslint-config"
@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/HongxuanG/eslint-config#readme",
   "devDependencies": {
-    "@aaronghx/eslint-config": "workspace:^0.1.1",
-    "eslint": "^8.10.0",
-    "typescript": "^4.6.2"
+    "@aaronghx/eslint-config": "workspace:^",
+    "eslint": "^8.13.0",
+    "typescript": "^4.6.3"
   }
 }
