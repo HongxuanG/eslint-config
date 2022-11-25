@@ -12,10 +12,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --config=index.js",
-    "lint:fix": "eslint . --fix --config=index.js",
-    "publish:major": "npm version major && pnpm publish --no-git-checks",
-    "publish:minor": "npm version minor && pnpm publish --no-git-checks",
-    "publish:patch": "npm version patch && pnpm publish --no-git-checks"
+    "lint:fix": "eslint . --fix --config=index.js"
   },
   "peerDependencies": {
     "eslint": ">=7.4.0"
