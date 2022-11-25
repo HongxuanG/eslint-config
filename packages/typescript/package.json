@@ -1,6 +1,6 @@
 {
   "name": "@aaronghx/eslint-config-ts",
-  "version": "0.1.6",
+  "version": "0.1.2",
   "description": "eslint-config ts模块",
   "keywords": [
     "eslint-config-ts"

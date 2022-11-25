@@ -1,6 +1,6 @@
 {
   "name": "@aaronghx/eslint-config-wx",
-  "version": "0.1.5",
+  "version": "0.1.2",
   "description": "eslint-config 微信小程序",
   "keywords": [
     "eslint-config-wx"
