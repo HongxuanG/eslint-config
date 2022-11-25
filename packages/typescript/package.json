@@ -26,12 +26,11 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@aaronghx/eslint-config-basic": "workspace:^",
-    "@aaronghx/eslint-config-ts": "workspace:^",
-    "@typescript-eslint/eslint-plugin": "^5.19.0",
-    "@typescript-eslint/parser": "^5.19.0"
+    "@aaronghx/eslint-config-basic": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0"
   },
   "devDependencies": {
-    "eslint": "^8.13.0"
+    "eslint": "^8.28.0"
   }
 }

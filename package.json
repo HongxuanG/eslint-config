@@ -16,7 +16,7 @@
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "release": "pnpm run publish:patch -r"
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "publishConfig": {
     "access": "public"
@@ -26,8 +26,9 @@
   },
   "homepage": "https://github.com/HongxuanG/eslint-config#readme",
   "devDependencies": {
-    "@aaronghx/eslint-config": "workspace:^",
-    "eslint": "^8.13.0",
-    "typescript": "^4.6.3"
+    "@aaronghx/eslint-config": "workspace:*",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.3"
   }
 }
