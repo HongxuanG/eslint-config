@@ -1,6 +1,6 @@
 {
   "name": "@aaronghx/eslint-config-monorepo",
-  "version": "0.1.5",
+  "version": "0.1.11",
   "description": "AaronGuo的eslint-config",
   "keywords": [
     "AaronGuo 's eslint-config"
@@ -16,7 +16,7 @@
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish  --force --access public"
   },
   "publishConfig": {
     "access": "public"
