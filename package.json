@@ -1,6 +1,6 @@
 {
   "name": "@aaronghx/eslint-config-monorepo",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "AaronGuo的eslint-config",
   "keywords": [
     "AaronGuo 's eslint-config"
